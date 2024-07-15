@@ -1,0 +1,2 @@
+Github action secrets allow to use sensitive information such as passwords, tokens inside my Github Action workflows
+without having to store those tokens in the open for everybody to see.
