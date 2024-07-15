@@ -1,2 +1,6 @@
-Github action secrets allow to use sensitive information such as passwords, tokens inside my Github Action workflows
-without having to store those tokens in the open for everybody to see.
+- Github Action Secrets
+    Github action secrets allow to use sensitive information such as passwords, tokens inside my Github Action workflows
+    without having to store those tokens in the open for everybody to see.
+- Event that trigger workflows:
+    workflow triggers are events that cause a workflow to run.
+    - workflow dispatch allows to manually trigger a workflow.
