@@ -1,6 +1,31 @@
+- Workflows 
+    an automated process that reacts to events and runs jobs
+- Events 
+    any activity of the repository that triggers a workflow 
+- Jobs 
+    Each of the steps of the workflow, either a script or an action.
+- Action 
+    depends on the type of actions.
+    any kind of executable code that you can include in your job. e.g. cloning a repo, logging into a cloud provider, setting up build env.
+
 - Github Action Secrets
     Github action secrets allow to use sensitive information such as passwords, tokens inside my Github Action workflows
     without having to store those tokens in the open for everybody to see.
 - Event that trigger workflows:
     workflow triggers are events that cause a workflow to run.
     - workflow dispatch allows to manually trigger a workflow.
+
+- Every Python Project on Github actions will follow these Patterns:
+    - An action can be triggered on: push, pull request
+    - Jobs (multiple jobs are possible): 
+        uses: actions checkout clone a particular repo in the current context.
+        run: is used to set up an environment, for example installing dependencies like: e.g. pip install -r requirements.txt
+            including dependencies for the current project.
+
+        run: nbdev_test --flags # some commands can be used to run some tests.
+        
+- Special variable in Github Actions.
+    - the special variables are called (Github) contexts.
+    - They allow to get access to the context and other information tht the job is running in.
+    - Github event context
+    - Github expression actions: e.g. toJSON
