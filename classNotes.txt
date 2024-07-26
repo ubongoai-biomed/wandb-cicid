@@ -29,3 +29,7 @@
     - They allow to get access to the context and other information tht the job is running in.
     - Github event context
     - Github expression actions: e.g. toJSON
+
+- Branch Protections (Protect the branch from merging PR, which failed tests.)
+    - can be set in: Settings -> Branches -> Branch Protection Rules
+    - 
