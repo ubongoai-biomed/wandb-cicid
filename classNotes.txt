@@ -2,6 +2,7 @@
     an automated process that reacts to events and runs jobs
 - Events 
     any activity of the repository that triggers a workflow 
+    [push]
 - Jobs 
     Each of the steps of the workflow, either a script or an action.
 - Action 
@@ -10,7 +11,10 @@
 
 - Github Action Secrets
     Github action secrets allow to use sensitive information such as passwords, tokens inside my Github Action workflows
-    without having to store those tokens in the open for everybody to see.
+    without having to store those tokens in the open for everybody to see. 
+
+- Github Actions
+    uses:actions/checkout : Access to files from your repository (e.g. requirements.txt).
 - Event that trigger workflows:
     workflow triggers are events that cause a workflow to run.
     - workflow dispatch allows to manually trigger a workflow.
@@ -32,4 +36,5 @@
 
 - Branch Protections (Protect the branch from merging PR, which failed tests.)
     - can be set in: Settings -> Branches -> Branch Protection Rules
-    - 
+    - can be used to gate pull requests from being merged without successfully running a set of tests.
+    - It is used to prevent pull requests from being merged.
