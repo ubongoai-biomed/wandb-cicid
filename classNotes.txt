@@ -38,3 +38,18 @@
     - can be set in: Settings -> Branches -> Branch Protection Rules
     - can be used to gate pull requests from being merged without successfully running a set of tests.
     - It is used to prevent pull requests from being merged.
+
+Testing your ML code:
+    - Unit tests: 
+        - Test individual components of your code : e.g. Methods, Functions
+    - Smoke tests: 
+        - Test the code ass a whole for stability
+        e.g. Run the training loop with a very small datasetto make sure the code can run.
+    - Python Testing with pytest.
+
+Testing ML code walkthrough
+    - tests.ymal
+        - workflow_dispatch : allows to manually run the workflow with the push of a button.
+        - Github Actions:
+            defaults: create a map of default settings that will apply to all jobs in the workflow.
+                    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaults
